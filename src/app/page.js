@@ -17,7 +17,10 @@ const AddUser = () => {
       <div className="bg-white p-8 rounded-lg shadow-md max-w-md w-full mb-4">
         <input type="text" name="name" value={name} placeholder="Enter name" className="w-full h-12 px-4 border border-gray-300 mb-4 focus:outline-none focus:border-blue-500 rounded-md" onChange={(e) => setName(e.target.value)} />
         <button className="w-full h-12 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none" onClick={userDispatch}>Add User</button>
-        <Link href="/deleteuser" className="block text-center text-blue-500 mt-4 hover:underline">Delete User</Link>
+        <div className="flex items-center justify-evenly">
+          <Link href="/deleteuser" className="text-center text-blue-500 mt-4 hover:underline">Delete User</Link>
+          <Link href="/todo" className="text-center text-blue-500 mt-4 hover:underline">Todos</Link>
+        </div>
       </div>
       <div className="bg-white p-8 rounded-lg shadow-md max-w-md w-full">
         <h2 className="text-2xl font-bold mb-4">List Users</h2>

@@ -18,7 +18,9 @@ const Todo = () => {
       <div className="bg-white p-8 rounded-lg shadow-md max-w-md w-full mb-4">
         <input type="text" name="name" value={task} placeholder="Enter Task" className="w-full h-12 px-4 border border-gray-300 mb-4 focus:outline-none focus:border-blue-500 rounded-md" onChange={(e) => setTask(e.target.value)} />
         <button className="w-full h-12 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none" onClick={taskDispatch}>Add Task</button>
-        <Link href="/deletetask" className="block text-center text-blue-500 mt-4 hover:underline">Delete Task</Link>
+        <div className="flex items-center justify-evenly">
+          <Link href="" className="text-center text-blue-500 mt-4 hover:underline">Delete Task</Link>
+        </div>
       </div>
       <div className="bg-white p-8 rounded-lg shadow-md max-w-md w-full">
         <h2 className="text-2xl font-bold mb-4">List Tasks</h2>
