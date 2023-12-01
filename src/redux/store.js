@@ -1,10 +1,13 @@
 import { configureStore } from '@reduxjs/toolkit';
-import userSlice from './Slices/userSlice';
+import persistedReducer from './Slices/userSlice';
 import todoSlice from './Slices/todoSlice';
+import { persistStore } from 'redux-persist';
 
 export const store = configureStore({
     reducer: {
-        usersData: userSlice,
+        usersData: persistedReducer,
         todo: todoSlice,
-    },
+    }
 });
+
+export const persistor = persistStore(store);
