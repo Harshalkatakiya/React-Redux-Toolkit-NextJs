@@ -1,4 +1,4 @@
-# React Redux Toolkit in Next JS
+# Redux Toolkit in Next JS
 
 ## Getting Started
 
