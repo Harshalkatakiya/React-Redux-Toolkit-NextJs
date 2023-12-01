@@ -8,7 +8,7 @@ export const store = configureStore({
         usersData: persistedReducer,
         todo: todoSlice,
     },
-    devTools: process.env.DEVTOOLS === 'production',
+    devTools: process.env.DEVTOOLS
 });
 
 export const persistor = persistStore(store);
